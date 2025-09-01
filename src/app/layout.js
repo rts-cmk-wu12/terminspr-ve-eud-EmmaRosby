@@ -1,4 +1,4 @@
-import "./globals.css";
+import "./globals.scss";
 
 export const metadata = {
   title: {
@@ -7,11 +7,11 @@ export const metadata = {
   },
   description: "Landrup Dans er en lille danseskole for både børn og voksne",
 }
-export default function Home() {
+export default function Home({children}) {
   return (
     <html lang="da">
       <body>
-        
+       {children}
       </body>
     </html>
   );

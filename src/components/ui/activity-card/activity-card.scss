@@ -1,0 +1,32 @@
+@use "../../../variables";
+@use "../../../../public/fonts/fonts";
+
+.activity-card{
+    height: 45vh;
+    margin: 2rem;
+    position: relative;
+    border-radius: 2rem 2rem 0rem 2rem;
+
+    &__img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        overflow: hidden;
+        
+    }
+
+    &__info{
+        position: absolute;
+        bottom: 0;
+        background-color: variables.$brand-color-transparent;
+        width: 100%;
+        padding: 1.5rem;
+        border-radius: 0 2rem ;
+        font-size: fonts.$font-size-s;
+        font-family: fonts.$font-Ubuntu;
+        
+        h2 {
+          font-size: fonts.$font-size-s;
+        }
+    }
+}

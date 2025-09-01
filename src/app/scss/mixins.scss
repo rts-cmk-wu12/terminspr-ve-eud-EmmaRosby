@@ -1,0 +1,15 @@
+@use "../../variables";
+@use "../../../public/fonts/fonts";
+
+%standert-button {
+     background-color: variables.$background-color;
+        color: variables.$white;
+        text-decoration: none;
+        font-size: fonts.$font-size-s;
+        font-family: fonts.$font-Roboto;
+
+        padding-block: 1rem;
+        padding-inline: 3rem;
+        border-radius: .5rem;
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}

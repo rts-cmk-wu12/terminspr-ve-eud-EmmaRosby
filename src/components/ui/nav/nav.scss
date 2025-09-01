@@ -1,0 +1,30 @@
+@use "../../../variables";
+
+.navigation {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-around;
+
+    background-color: variables.$white;
+    z-index: 100;
+
+    &__items {
+        margin-block: 1rem;
+        background-color: variables.$white;
+        font-size: 2rem;
+        
+        display: flex;
+        padding: .5rem;
+        border: solid 2px variables.$black;
+        border-radius: 3rem;
+
+        &__icon {
+            background-color: variables.$white;
+
+        }
+    }
+
+}

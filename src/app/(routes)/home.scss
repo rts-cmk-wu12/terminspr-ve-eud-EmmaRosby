@@ -1,0 +1,53 @@
+@use "../scss/mixins.scss";
+@use "../../../public/fonts/fonts";
+
+@use "../../variables";
+
+.start {
+    background-image: url("/images/splash-image.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+
+    &__headline{
+        padding-left: 2rem;
+        padding-right: 1rem;
+        margin-top: 50vh;
+        width: fit-content;
+        line-height: .9;
+        display: flex;
+        flex-direction: column;
+        
+        border-bottom: solid variables.$logo-underline-color 10px;
+        
+        &__first {
+            display: flex;
+            -webkit-text-stroke: 2px variables.$background-color;
+            -webkit-text-fill-color: transparent;
+            
+            font-family: fonts.$font-Roboto;
+            font-size: fonts.$font-size-l;
+            text-transform: uppercase;
+        }
+        &__second{
+            font-family: fonts.$font-Racing-Sans-One;
+            font-size: fonts.$font-size-xl;
+            color: variables.$logo-color;
+            text-transform: uppercase;
+            font-style: italic;
+
+            -webkit-text-stroke: 1px variables.$background-color;
+        }
+        
+    }
+    &__button{
+        position: fixed;
+        bottom: 2rem;
+        left: 50%;
+        transform: translateX(-50%,);
+
+        @extend %standert-button;
+       
+    }
+
+}
