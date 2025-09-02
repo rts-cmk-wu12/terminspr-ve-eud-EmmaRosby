@@ -1,13 +1,9 @@
 @use "../scss/mixins.scss";
 @use "../../../public/fonts/fonts";
-
 @use "../../variables";
 
 .start {
-    background-image: url("/images/splash-image.jpg");
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
+    @extend %bg-img;
 
     &__headline{
         padding-left: 2rem;
@@ -31,7 +27,7 @@
         }
         &__second{
             font-family: fonts.$font-Racing-Sans-One;
-            font-size: fonts.$font-size-xl;
+            font-size: fonts.$font-size-xxl;
             color: variables.$logo-color;
             text-transform: uppercase;
             font-style: italic;

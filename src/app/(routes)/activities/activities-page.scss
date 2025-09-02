@@ -1,2 +1,12 @@
 @use "../../../variables";
+@use "../../../../public/fonts/fonts";
 
+.activities-page{
+    &__headline{
+        color: variables.$white;
+        font-family: fonts.$font-Ubuntu;
+        font-size: fonts.$font-size-l;
+        font-weight: 400;
+        margin: 2rem 0 -1rem 2rem;
+    }
+}

@@ -2,7 +2,7 @@
 @use "../../../public/fonts/fonts";
 
 %standert-button {
-     background-color: variables.$background-color;
+        background-color: variables.$background-color;
         color: variables.$white;
         text-decoration: none;
         font-size: fonts.$font-size-s;
@@ -11,5 +11,13 @@
         padding-block: 1rem;
         padding-inline: 3rem;
         border-radius: .5rem;
-        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+        border: none;
+        box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+%bg-img {
+        background-image: url("/images/splash-image.jpg");
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
 }

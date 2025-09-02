@@ -1,0 +1,44 @@
+@use "../../../variables";
+@use "../../../../public/fonts/fonts";
+@use "../../../app/scss/mixins.scss";
+
+.login-form{
+    display: flex;
+    flex-direction: column;
+    margin-inline: 2rem ;
+    gap: .5rem;
+    
+    transform: rotate(-60deg);
+
+    &__headline{
+        color: variables.$white;
+        font-family: fonts.$font-Ubuntu;
+        font-size: fonts.$font-size-xl;
+        font-weight: 400;
+
+    }
+
+    &__form{
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+
+        align-items: center;
+        
+        &__input{
+            padding: .8rem;
+            border: none;
+            background-color: variables.$white;
+            color: variables.$gray;
+            width: 80vw;
+            
+        }
+        
+        &__submit{
+            @extend %standert-button;
+            width: 70%;
+            
+        }
+    }
+
+}
