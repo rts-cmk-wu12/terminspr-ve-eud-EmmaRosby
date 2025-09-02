@@ -2,6 +2,9 @@
 @use "../../../../public/fonts/fonts";
 
 .activities-page{
+
+    margin-bottom: 5rem;
+
     &__headline{
         color: variables.$white;
         font-family: fonts.$font-Ubuntu;

@@ -19,7 +19,7 @@
         &__first {
             display: flex;
             -webkit-text-stroke: 2px variables.$background-color;
-            -webkit-text-fill-color: transparent;
+            -webkit-text-fill-color: transparent; 
             
             font-family: fonts.$font-Roboto;
             font-size: fonts.$font-size-l;

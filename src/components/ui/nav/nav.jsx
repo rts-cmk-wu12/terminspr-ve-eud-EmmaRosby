@@ -3,6 +3,7 @@ import "./nav.scss"
 import { AiOutlineHome } from "react-icons/ai";
 import { IoSearch } from "react-icons/io5";
 import { FaRegCalendarAlt } from "react-icons/fa";
+import { CiUser } from "react-icons/ci";
 
 function Nav() {
     return (
@@ -16,6 +17,9 @@ function Nav() {
                 </Link>
                 <Link href="" className="navigation__items" >
                     <FaRegCalendarAlt className="navigation__items__icon"/>
+                </Link>
+                <Link href="http://localhost:3000/login" className="navigation__items" >
+                    <CiUser className="navigation__items__icon"/>
                 </Link>
             </nav>
         </>
