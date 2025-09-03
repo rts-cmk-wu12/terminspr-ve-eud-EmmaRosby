@@ -1,0 +1,49 @@
+@use "../../../../variables";
+@use "../../../../../public/fonts/fonts";
+@use "../../../../app/scss/mixins.scss";
+
+.activity{
+    &__hero{
+        position: relative;
+        width: 100vw;
+        height: 60vh;
+
+        &__img{
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            overflow: hidden;
+        }
+        &__submit{
+            position: absolute;
+            right: 2rem;
+            bottom: 2rem;
+            @extend %standert-button;
+            width: 50%;
+
+        }
+
+    }
+    &__info{
+        color: variables.$white;
+        font-family: fonts.$font-Ubuntu;
+        font-size: fonts.$font-size-s;
+
+        display: flex;
+        flex-direction: column;
+        margin: 1rem;
+        
+        &__class{
+            font-size: fonts.$font-size-m;
+        }
+        &__date{
+            text-transform: capitalize;
+        }
+        &__decsription{
+            margin-top: 1rem;
+        }
+    }
+
+}

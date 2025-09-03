@@ -2,6 +2,8 @@
 import { cookies } from "next/headers";
 import z from "zod";
 
+// Denne kode er taget fra et tidligere projekt
+
 async function DoLogin(prevState, formData) {
 
     const username = formData.get("username");
@@ -21,8 +23,20 @@ async function DoLogin(prevState, formData) {
         ...(z.treeifyError(validated.error))
     };
 
-    const response = await fetch(`http://localhost:4000/api/v1/users/${validated.data.username}`); // api i stedet for access token
-    const json = await response.json();   
+   const response = await fetch('http://localhost:4000/auth/token', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+            username: validated.data.username,
+            password: validated.data.password
+        })
+    });
+
+    const userResponse = await fetch(`http://localhost:4000/api/v1/users/${id}`); // api i stedet for access token
+    const json = await response.json();
+
 
     console.log(json);
     if (!json.length) return {

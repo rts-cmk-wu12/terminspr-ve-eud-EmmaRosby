@@ -5,7 +5,7 @@
 .start {
     @extend %bg-img;
 
-    &__headline{
+    &__headline {
         padding-left: 2rem;
         padding-right: 1rem;
         margin-top: 50vh;
@@ -13,19 +13,20 @@
         line-height: .9;
         display: flex;
         flex-direction: column;
-        
+
         border-bottom: solid variables.$logo-underline-color 10px;
-        
+
         &__first {
             display: flex;
             -webkit-text-stroke: 2px variables.$background-color;
-            -webkit-text-fill-color: transparent; 
-            
+            -webkit-text-fill-color: transparent;
+
             font-family: fonts.$font-Roboto;
             font-size: fonts.$font-size-l;
             text-transform: uppercase;
         }
-        &__second{
+
+        &__second {
             font-family: fonts.$font-Racing-Sans-One;
             font-size: fonts.$font-size-xxl;
             color: variables.$logo-color;
@@ -34,16 +35,33 @@
 
             -webkit-text-stroke: 1px variables.$background-color;
         }
-        
+
     }
-    &__button{
+
+    &__button {
         position: fixed;
         bottom: 2rem;
         left: 50%;
-        transform: translateX(-50%,);
+        transform: translateX(-50%, );
 
         @extend %standert-button;
-       
+
+        opacity: 1;
+        animation-name: fadeInOpacity;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-in;
+        animation-duration: 1.5s;
+
     }
 
+}
+
+@keyframes fadeInOpacity {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }

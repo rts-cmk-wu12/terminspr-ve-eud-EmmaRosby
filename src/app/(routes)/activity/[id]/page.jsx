@@ -1,3 +1,4 @@
+import Nav from "@/components/ui/nav/nav";
 import "./activity.scss";
 export async function generateMetadata({ params }) {
     const {id} = await params;
@@ -34,6 +35,7 @@ console.log(json);
 
             </section>
         </article>
+        <Nav />
         </>
     );
 }

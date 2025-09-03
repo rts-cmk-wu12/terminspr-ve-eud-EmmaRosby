@@ -12,7 +12,7 @@ function Nav() {
                 <Link href="http://localhost:3000/activities" className="navigation__items">
                     <AiOutlineHome className="navigation__items__icon"/>
                 </Link>
-                <Link href="" className="navigation__items">
+                <Link href="http://localhost:3000/search" className="navigation__items">
                     <IoSearch className="navigation__items__icon" />
                 </Link>
                 <Link href="" className="navigation__items" >
