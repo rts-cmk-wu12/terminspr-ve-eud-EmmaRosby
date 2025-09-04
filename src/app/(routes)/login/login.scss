@@ -4,19 +4,8 @@
 
 .login{
     @extend %bg-img;
+        background-image: url("/images/login-splash.jpg");
+
     position: relative;
 }
 
-.overlay{
-    height: 100vh;
-    width: 100vw;
-    background-color: variables.$background-color-transparent;
-
-    position: absolute;
-    top: -4vh;
-    transform: rotate(60deg);
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}

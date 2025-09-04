@@ -6,9 +6,7 @@ function Login() {
     return (  
         <>
             <main className="login">
-                <div className="overlay">
                 <LoginForm />
-                </div>
                 <Nav />
             </main>
         </>

@@ -1,0 +1,25 @@
+@use "../../../variables";
+@use "../../../../public/fonts/fonts";
+
+.calender{
+    background-color: variables.$white;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    margin-inline: 2rem;
+    margin-top: 2rem;
+    
+    &__headline{
+        font-size: fonts.$font-size-l;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        font-weight: 400;
+        font-family: fonts.$font-Ubuntu;
+        
+    }
+    &__time{
+        font-size: fonts.$font-size-s;
+        font-family: fonts.$font-Ubuntu;
+        text-transform: capitalize;
+
+    }
+}

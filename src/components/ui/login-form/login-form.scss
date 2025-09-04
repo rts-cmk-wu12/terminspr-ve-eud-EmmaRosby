@@ -7,24 +7,22 @@
     flex-direction: column;
     margin-inline: 2rem ;
     gap: .5rem;
-    
-    transform: rotate(-60deg);
-
-    &__headline{
-        color: variables.$white;
-        font-family: fonts.$font-Ubuntu;
-        font-size: fonts.$font-size-xl;
-        font-weight: 400;
-
-    }
-
+    height: 90vh;
+    align-items: center;
+    justify-content: center;
+      
     &__form{
+        
         display: flex;
         flex-direction: column;
         gap: .5rem;
-
-        align-items: center;
         
+        &__headline{
+            color: variables.$white;
+            font-family: fonts.$font-Ubuntu;
+            font-size: fonts.$font-size-xl;
+            font-weight: 400;
+        }
         &__input{
             padding: .8rem;
             border: none;
@@ -37,8 +35,19 @@
         &__submit{
             @extend %standert-button;
             width: 70%;
+            margin: 0 auto;
             
         }
     }
 
+}
+
+.login-loader{
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
 }

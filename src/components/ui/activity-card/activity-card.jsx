@@ -8,7 +8,7 @@ function ActivityCard({ activity }) {
                 <article className="activity-card">
                     <img src={activity.asset.url} alt={activity.name} className="activity-card__img" />
                     <div className="activity-card__info">
-                        <h2>{activity.name}</h2>
+                        <h3>{activity.name}</h3>
                         <span>{activity.minAge} - {activity.maxAge} år</span>
                     </div>
                 </article>

@@ -15,7 +15,7 @@ function Nav() {
                 <Link href="http://localhost:3000/search" className="navigation__items">
                     <IoSearch className="navigation__items__icon" />
                 </Link>
-                <Link href="" className="navigation__items" >
+                <Link href="http://localhost:3000/calender" className="navigation__items" >
                     <FaRegCalendarAlt className="navigation__items__icon"/>
                 </Link>
                 <Link href="http://localhost:3000/login" className="navigation__items" >
