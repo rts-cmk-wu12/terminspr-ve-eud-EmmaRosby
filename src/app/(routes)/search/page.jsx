@@ -15,13 +15,13 @@ async function SearchPage() {
     return (  
         <>
         <main className="search-page">
-            <SearchBar />
             <h2 className="search-page__headline">Søg</h2>
+            <SearchBar />
             {activities.map(activity =>
                 <li key={activity.id}>
                     <ActivityCard activity={activity}/>
                 </li>
-            )};            
+            )};      
             <Nav />
         </main>
         </>

@@ -1,0 +1,38 @@
+@use "../../../variables";
+@use "../../../../public/fonts/fonts";
+
+.search-bar {
+    border-bottom: 2px solid variables.$white;
+    padding-bottom: 2rem;
+    margin: 2rem 2rem 0 ;
+    &__container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: variables.$input-color;
+        padding: .5rem;
+        
+        &__input{
+            
+            width: 100%;
+            height: 2rem;
+            background-color: variables.$input-color;
+            border: none;
+            outline: none;
+            font-size: fonts.$font-size-s;
+            color: variables.$white;
+            
+        }
+        &__icon{
+            font-size: 2rem;
+            color: variables.$white;
+        }
+    }
+    &__loading{
+        font-family: fonts.$font-Ubuntu;
+        color: variables.$white;
+        font-size: fonts.$font-size-s;
+        text-align: center;
+        margin-top: 1rem;
+    }
+}

@@ -2,6 +2,8 @@
 
 import React, { useState, useEffect } from 'react';
 import ActivityCard from '../activity-card/activity-card';
+import { CiSearch } from "react-icons/ci";
+import "./search-bar.scss"
 
 function SearchBar() {
     const [query, setQuery] = useState('');
@@ -32,15 +34,18 @@ function SearchBar() {
     }, [query]);
 
     return (
-        <div className="search-bar-container">
-            <input
-                type="text"
-                placeholder="Search activities by name..."
-                value={query}
-                onChange={e => setQuery(e.target.value)}
-                className="search-input"
-            />
-            {loading && <div>Loading...</div>}
+        <div className="search-bar">
+            <div className="search-bar__container">
+                <input
+                    type="text"
+                    value={query}
+                    onChange={e => setQuery(e.target.value)}
+                    className="search-bar__container__input"
+                    
+                />
+                <CiSearch className="search-bar__container__icon"/>
+            </div>
+            {loading && <div className="search-bar__loading">Loading...</div>}
             {results.length > 0 && (
                 <div className="search-suggestions">
                     {results.map(activity => (

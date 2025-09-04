@@ -1,7 +1,7 @@
 import Link from "next/link";
 import "./activity-card.scss";
 
-async function ActivityCard({ activity }) {
+function ActivityCard({ activity }) {
     return (
         <>
             <Link href={`/activity/${activity.id}`} >
