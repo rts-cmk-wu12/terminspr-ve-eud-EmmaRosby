@@ -6,7 +6,6 @@
   padding: 0;
   box-sizing: border-box;
   color: inherit;
-  scroll-behavior: smooth;
   list-style: none;
   overflow-x: hidden;
 }
@@ -15,19 +14,19 @@ img {
   display: block;
 }
 
-body{
+body {
   background-color: variables.$background-color;
-  
+
 }
 
-a{
+a {
   text-decoration: none;
 }
 
-h2{
+h2 {
   color: variables.$white;
-        font-family: fonts.$font-Ubuntu;
-        font-size: fonts.$font-size-l;
-        font-weight: 400;
-        margin: 2rem 0 -1rem 2rem;
+  font-family: fonts.$font-Ubuntu;
+  font-size: fonts.$font-size-l;
+  font-weight: 400;
+  margin: 2rem 0 0rem 2rem;
 }

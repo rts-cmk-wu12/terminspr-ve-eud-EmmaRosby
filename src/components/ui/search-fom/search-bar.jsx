@@ -5,6 +5,8 @@ import ActivityCard from '../activity-card/activity-card';
 import { CiSearch } from "react-icons/ci";
 import "./search-bar.scss"
 
+// Taget fra et tidligere project
+
 function SearchBar() {
     const [query, setQuery] = useState('');
     const [results, setResults] = useState([]);
