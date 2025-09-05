@@ -32,7 +32,7 @@ async function ActivitiesDatailsPage({ params }) {
                         <img src={json.asset.url} alt={json.name} className="activity__hero__img" />
                     </div>
                     <section className="activity__info">
-                        <h2 className="activity__info__class">{json.name}</h2>
+                        <h3 className="activity__info__class">{json.name}</h3>
                         <span className="activity__info__age">{json.minAge} - {json.maxAge} år</span>
                         <span className="activity__info__date">{json.weekday}, kl. {json.time}</span>
                         <p className="activity__info__decsription">{json.description}</p>
@@ -51,7 +51,7 @@ async function ActivitiesDatailsPage({ params }) {
                         <AddActivity className="activity__hero__submit"/>
                     </div>
                     <section className="activity__info">
-                        <h2 className="activity__info__class">{json.name}</h2>
+                        <h3 className="activity__info__class">{json.name}</h3>
                         <span className="activity__info__age">{json.minAge} - {json.maxAge} år</span>
                         <span className="activity__info__date">{json.weekday}, kl. {json.time}</span>
                         <p className="activity__info__decsription">{json.description}</p>

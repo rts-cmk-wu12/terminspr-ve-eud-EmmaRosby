@@ -16,9 +16,12 @@ async function ActivitiesPage() {
         <main className="activities-page">
             <h2 className="activities-page__headline">Aktiviteter</h2>
             {activities.map(activity =>
-                <li key={activity.id}>
+            <ul key={activity.id}>
+                <li >
                     <ActivityCard activity={activity}/>
                 </li>
+
+            </ul>
             )};            
             <Nav />
         </main>
